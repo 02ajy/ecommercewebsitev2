@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width3Ddevice-width, initial-scale=1.0">
+     <title>Doctor Details | MedIT</title>
+     <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/d636d1fa57.js" crossorigin="anonymous"></script>
+</head>
+ <body>
+     <div class="container">
+     	<div class="navbar">
+ 		<div class="logo">
+ 			<img src="images/logolast.png" width="120px">
+ 		</div>
+ 		<nav>
+ 			<ul id="MenuItems">
+ 				<li><a href="index.html">Home</a></li>
+ 				<li><a href="product.html">Products</a></li>
+ 				<li><a href="doctor.html">Doctors</a></li>
+ 				<li><a href="contact.html">Contact</a></li>
+ 				<li><a href="account.html">Account</a></li>
+ 			</ul>
+ 		</nav>
+ 		<img src="images/cart.png" width="30px" height="30px">
+ 		<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+     </div>
+</div>
+
+<!----------single--------->
+<div class="small-container">
+	<div class="single-product">
+	<div class="row">
+		<div class="col-2">
+   <img src="images/doc2.png" width="100%" id="ProductImg">
+   <div class="small-img-row">
+</div>
+		</div>
+		<div class="col-2">
+			<p>Home / Doctors</p>
+			<h1>Dr. Miranda Bailey</h1>
+			<h4>University of Sto. Thomas</h4>
+			<a href="https://meet.google.com/aqa-aukb-zwo" class="btn">Meet the doctor now!</a>
+			<h3>Doctor Details <i class="fas fa-indent"></i></h3>
+			<br>
+			<p>Graduated in UST College of Medicine</p>
+		</div>
+	</div>
+	</div>
+</div>
+
+<!--------footer---------->
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3>Download our App</h3>
+				<p>Download our App for Android and Mobile Devices</p>
+				<div class="app-logo">
+					<img src="images/play-store.png">
+					<img src="images/app-store.png">
+				</div>
+			</div>
+			<div class="footer-col-2">
+				<img src="images/logowhite22.png">
+				<p>Our Purpose Is To Provide Authentic And Quality Medicine For All</p>
+			</div>
+			<div class="footer-col-3">
+				<h3>Useful Links</h3>
+				<ul>
+					<li>Coupons</li>
+					<li>Blog</li>
+					<li>Affiliates</li>
+					<li>Location</li>
+				</ul> 
+			</div>
+			
+			<div class="footer-col-4">
+				<h3>Follow Us!</h3>
+				<ul>
+					<li>Facebook</li>
+					<li>Twitter</li>
+					<li>Instagram</li>
+					<li>Youtube</li>
+				</ul> 
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">Copyright 2021</p>
+	</div>
+</div>
+
+
+
+<script>
+	var MenuItems= document.getElementById("MenuItems");
+
+	MenuItems.style.maxHeight="0px";
+
+	function menutoggle(){
+		if(MenuItems.style.maxHeight=="0px"){
+			MenuItems.style.maxHeight="200px";
+		}
+		else{
+			MenuItems.style.maxHeight="0px";
+		}
+	}
+</script>
+
+<script>
+	var ProductImg document.getElementById ("[ProductImg");
+     var SmallImg = document.getElementsByClassName("small-img");
+  SmallImg[0].onclick = function()
+   {
+      ProductImg.src = SmallImg[0].src;
+   }
+  SmallImg[1].onclick = function()
+   {
+      ProductImg.src = SmallImg[1].src;
+   }
+  SmallImg[2].onclick = function()
+   {
+      ProductImg.src = SmallImg[2].src;
+   }
+   SmallImg[3].onclick = function()
+   {
+      ProductImg.src = SmallImg[3].src;
+   }
+</script>
+
+</body>
+</html>
+		

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width3Ddevice-width, initial-scale=1.0">
+     <title>Cart | Shun Kicks</title>
+     <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/d636d1fa57.js" crossorigin="anonymous"></script>
+</head>
+ <body>
+     <div class="container">
+     	<div class="navbar">
+ 		<div class="logo">
+ 			<a href="index.html"><img src="images/logolast.png" width="120px"></a>
+ 		</div>
+ 		<nav>
+ 			<ul id="MenuItems">
+ 				<li><a href="index.html">Home</a></li>
+ 				<li><a href="product.html">Products</a></li>
+ 				<li><a href="about.html">About</a></li>
+ 				<li><a href="contact.html">Contact</a></li>
+ 				<li><a href="account.html">Account</a></li>
+ 			</ul>
+ 		</nav>
+ 		<a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+ 		<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+     </div>
+</div>
+
+<!------------cart----------->
+
+	<div class="small-container">
+		<div class="cart-page">
+		<table>
+			<tr>
+				<th>Product</th>
+				<th>Quantity</th>
+				<th>Subtotal</th>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<img src="images/product12.jpg">
+						<div>
+							<p>Nike Free Terra Vista</p>
+							<small>Price: PHP6,595</small>
+							<br>
+							<a href="">REMOVE</a>
+						</div>
+					</div>
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>PHP6,595</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<img src="images/buy1.jpg">
+						<div>
+							<p>Air Jordan 1 Mid SE</p>
+							<small>Price: PHP6,595</small>
+							<br>
+							<a href="">REMOVE</a>
+						</div>
+					</div>
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>PHP6,595</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="cart-info">
+						<img src="images/product5.jpg">
+						<div>
+							<p>Nike Air Max 95</p>
+							<small>Price: PHP8,595</small>
+							<br>
+							<a href="">REMOVE</a>
+						</div>
+					</div>
+				</td>
+				<td><input type="number" value="1"></td>
+				<td>PHP8,595</td>
+			</tr>
+		</table>
+
+		<div class="total-price">
+			<table>
+				<tr>
+					<td>Subtotal</td>
+					<td>PHP 21,785</td>
+				</tr>
+				<tr>
+					<td>VAT</td>
+					<td>PHP 750</td>
+				</tr>
+				<tr>
+					<td>Total</td>
+					<td>PHP 22,535</td>
+				</tr>
+			</table>
+			<div class="cart-checkout"></div>
+			</div>
+
+		</div>
+		</div>
+	</div>	
+
+
+<!--------footer---------->
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3>Download our App</h3>
+				<p>Download our App for Android and Mobile Devices</p>
+				<div class="app-logo">
+					<img src="images/play-store.png">
+					<img src="images/app-store.png">
+				</div>
+			</div>
+			<div class="footer-col-2">
+				<img src="images/logowhite22.png">
+				<p>Our Purpose Is To Provide Authentic And Quality Shoes For All</p>
+			</div>
+			<div class="footer-col-3">
+				<h3>Useful Links</h3>
+				<ul>
+					<li>Coupons</li>
+					<li>Blog</li>
+					<li>Affiliates</li>
+					<li>Location</li>
+				</ul> 
+			</div>
+			
+			<div class="footer-col-4">
+				<h3>Follow Us!</h3>
+				<ul>
+					<li>Facebook</li>
+					<li>Twitter</li>
+					<li>Instagram</li>
+					<li>Youtube</li>
+				</ul> 
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">Copyright 2021</p>
+	</div>
+</div>
+
+
+
+<script>
+	var MenuItems= document.getElementById("MenuItems");
+
+	MenuItems.style.maxHeight="0px";
+
+	function menutoggle(){
+		if(MenuItems.style.maxHeight=="0px"){
+			MenuItems.style.maxHeight="200px";
+		}
+		else{
+			MenuItems.style.maxHeight="0px";
+		}
+	}
+</script>
+
+</body>
+</html>
+		
